@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pengumuman</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pengumuman Rapat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #3498db;
+      --background-color: #f2f4f8;
+      --text-color: #333;
+    }
+
     body {
-      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
       text-align: center;
-      padding: 100px;
-      background-color: #f4f4f4;
+      max-width: 500px;
+      width: 90%;
     }
-    .box {
-      background: white;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      display: inline-block;
-    }
+
     h1 {
-      color: #2c3e50;
+      color: var(--primary-color);
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: var(--text-color);
+      font-size: 16px;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 6px 12px;
+      font-size: 13px;
+      background-color: var(--accent-color);
+      color: white;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #999;
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>Tidak ada rapat hari ini</h1>
+  <div class="container">
+    <div class="badge">Pengumuman</div>
+    <h1>Tidak Ada Rapat Hari Ini</h1>
+    <p>Terima kasih atas perhatiannya. Silakan cek kembali esok hari untuk informasi terbaru.</p>
+    <footer>&copy; 2025 Sekretariat</footer>
   </div>
 </body>
 </html>
